@@ -179,6 +179,7 @@ class RGBDCows2020(data.Dataset):
 
             # Find all the images within these folders
             for inter in os.listdir(current_RGB):
+                print(f"current_RGB={current_RGB}")
                 RGB_paths = DataUtils.allFilesAtDirWithExt(os.path.join(current_RGB,inter), ".jpg")
                 D_paths = DataUtils.allFilesAtDirWithExt(os.path.join(current_RGB,inter), ".jpg")
                 assert len(RGB_paths) == len(D_paths)
