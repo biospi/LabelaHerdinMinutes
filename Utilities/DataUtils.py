@@ -420,7 +420,6 @@ class DataUtils:
 		"""
 
 		# Make sure we're looking at a folder
-		print(directory)
 		assert os.path.isdir(directory)
 
 		# Gather the files inside
